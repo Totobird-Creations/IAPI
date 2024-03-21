@@ -1,0 +1,21 @@
+{
+
+    "${mod_id}.screen.title"   : "Import Item",
+    "${mod_id}.screen.label"   : "Incoming item import from",
+    "${mod_id}.screen.approve" : "Accept",
+    "${mod_id}.screen.reject"  : "Reject",
+
+    "${mod_id}.approve"              : "§6Approved incoming item import",
+    "${mod_id}.approve.no_space"     : "§cApproved incoming item import, but there is no inventory space",
+    "${mod_id}.approve.not_creative" : "§cApproved incoming item import, but you are not in creative",
+
+    "${mod_id}.crash" : "§cItem import server has crashed. Check log for more details",
+
+    "yacl3.config.${mod_id}.title" : "${mod_name}",
+
+    "yacl3.config.${mod_id}:config.category.main" : "${mod_name} Server",
+    "yacl3.config.${mod_id}:config.serverPort"      : "Server Port",
+    "yacl3.config.${mod_id}:config.serverPort.desc" : "The port to run the item server on.\n\n§e§lRequires a world reconnect on change.",
+    "yacl3.config.${mod_id}:config.autoApprove"      : "Auto Approve Incoming",
+    "yacl3.config.${mod_id}:config.autoApprove.desc" : "When receiving an item, skip the manual approval step.\n\n§c§lNot recommended."
+}

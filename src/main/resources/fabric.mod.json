@@ -1,0 +1,49 @@
+{
+
+	"schemaVersion" : 1,
+
+
+	"id"      : "${mod_id}",
+	"version" : "${mod_version}",
+	"license" : "MIT",
+
+	"name"        : "${mod_name}",
+	"description" : "TODO",
+	"icon"        : "assets/${mod_id}/icon.png",
+
+	"authors" : [
+		{"name" : "Totobird Creations", "contact" : {
+			"homepage" : "https://github.com/Totobird-Creations"
+		}}
+	],
+	"contact" : {
+		"sources"  : "https://github.com/Totobird-Creations/${mod_name}",
+		"issues"   : "https://github.com/Totobird-Creations/${mod_name}/issues",
+		"wiki"     : "https://github.com/Totobird-Creations/${mod_name}/wiki"
+	},
+
+
+	"environment" : "client",
+	"entrypoints" : {
+		"client"  : [{"value" : "${mod_group}.${mod_id}.Main"                , "adapter" : "kotlin"}],
+		"modmenu" : [{"value" : "${mod_group}.${mod_id}.config.ConfigScreen" , "adapter" : "kotlin"}]
+	},
+
+
+	"depends" : {
+
+		"java"                      : ">=17",
+		"minecraft"                 : "~${minecraft_version}",
+		"fabricloader"              : ">=${fabricloader_version}",
+		"fabric-api"                : "*",
+		"fabric-language-kotlin"    : ">=${kotlin_version}",
+
+		"yet_another_config_lib_v3" : "*"
+	},
+
+	"recommends": {
+		"nochatreports" : "*",
+		"modmenu"       : "*"
+	}
+
+}
